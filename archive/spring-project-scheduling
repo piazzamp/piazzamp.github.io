@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<title></title>
+		<!-- this is an archived tumblr post published on 2017-03-19 11:58:24 -0500 CDT at http://mattpiazza.com/post/158592273905/spring-project-scheduling -->
+  </head>
+  <body>
+	<p>In the world of computer science, there are many difficult problems under the ‘scheduling’ umbrella - interrupts, multi-threading, locks, and so on. However, in the real world, there are seemingly simple scheduling tasks that human people engage in (either via manual arrangement or with the help of #software). The specific, human example I’m thinking of is scheduling part-time employees in a food &amp; bev environment.</p>
+
+<p>My brother, <a href="https://www.instagram.com/dj_piazza/">DJ</a>, is helping open a few restaurants while managing a coffee shop. I have often seen him come home, open up google calendar, and begin to drag and drop 4, 6, and 8 hour blocks while calculating, in his head, which roles (dishwasher, barista, etc) need to be filled when, who can fill them, and who has requested time off. Of course, being an annoying software boy, I made fun of him for not using some product that could take in the resource pool, constraints, and desired staffing and output a decent schedule.</p>
+
+<p>It turns out there are 2 SaaS products that aim to solve this problem and many full-blown HR systems that allow admins to schedule staff. These 2 standalone options are extrememly overpriced (and probably include features that are only used by a small minority of organizations).</p>
+
+<p><a href="http://wheniwork.com/">When I Work</a> is a beautiful product that has iOS and Android apps ready to download. It&rsquo;s about $1 per user. They have a hard-to-find <a href="https://help.wheniwork.com/articles/how-does-the-free-plan-work/">free tier</a> that is significantly limited (&lt; 6 users, no hallmark features, etc). It seemed like an OK choice for a very-small place. But! It only allows schedules to be planned 2 weeks ahead of time (in the free version only, I think).</p>
+
+<p><a href="http://www.schedulefly.com/">Schedulefly</a> is not as sleek as When I Work, but it is at least as powerful (plus you can schedule arbitrarily far into the future as far as I can tell). But it rather expensive - with the cheapest plan starting at $30 per month.</p>
+
+<p><strong>Goal</strong></p>
+
+<p>Write a simple-to-use scheduling web app <em>exclusively using free cloud services</em>. I want to avoid charging money for the majority of users. Sure, it&rsquo;d be fun to make some money with this, but I think that&rsquo;s where our friends at Schedulefly went wrong. If I can use free-tier AWS/GCE resources, then the only &lsquo;cost&rsquo; of running it will be my time.</p>
+
+<p>Minimum requirements:</p>
+
+<ul><li>employees have skills that correlate with roles they can play for a shift of work (running the register, busboy, etc)</li>
+<li>employees can describe their availabilty and a maximum number of hours they&rsquo;re willing to work per week</li>
+<li>admins (managers?) can describe which skills each employee has</li>
+<li>admins describe how many of each role they want at any time during a day</li>
+<li>admins can reassign shifts after the system has assigned them</li>
+</ul><p>Table stakes for a real product:</p>
+
+<ul><li>admin-approved shift swaps</li>
+<li>notifications of shift changes</li>
+<li>templates for typical week schedules</li>
+<li>multiple restaurant management (it can probably be more general than restaurants, pretty much any place with multiple parttime employees like retail storefronts and so on)</li>
+</ul>
+  </body>
+</html>

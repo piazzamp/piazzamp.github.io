@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<title></title>
+		<!-- this is an archived tumblr post published on 2016-02-20 18:41:58 -0600 CST at http://mattpiazza.com/post/139690985270/zero-values-and-json-in-go -->
+  </head>
+  <body>
+	<figure data-orig-width="3861" data-orig-height="3861" class="tmblr-full"><img src="https://78.media.tumblr.com/ee46ddfad564ddca3ef518a29453754c/tumblr_inline_o2vgqhTlcq1rdmpel_540.png" alt="image" data-orig-width="3861" data-orig-height="3861"/></figure><p>Go is great, I think that is apparent. If you have talked to me about software development at all in the past 5 months then you have certainly heard me talk about Go and how pleasing I find it to write.</p>
+
+<p>There are great, baked-in features, like documentation, testing, and (obviously) JSON encoding &amp; decoding of native types. It’s very simple to enable - any exported attribute (a field marked public, if you’re java-kin) of a struct can be encoded by the <code>encoding/json</code> package and will give you the obvious result where all struct elements have identical JSON field names. You have the option to override this default behavior and rename the fields or omit them entirely if they’re empty. So if your <code>user</code> has no <code>middleName</code> then the JSON version of that person will just not have a <code>middleName</code> field. Sound strightforward?</p>
+
+<p>How does <code>encoding/json</code> determine which fields to omit? I can’t say that I have read through their implementation, but it is safe to say that the package omits any field that has the zero-value for its type. That is a 0-length string, the int 0, float 0.0, or <code>false</code>. This works sometimes. If you want to pass back a <code>false</code> or a 0, your JSON representation will simply not have the fields you have set to those values.</p>
+
+<p>tl;dr: make sure there is no case where you want to send a zero-value via JSON in a field marked <code>omitempty</code></p>
+  </body>
+</html>
