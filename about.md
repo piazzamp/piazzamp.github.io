@@ -4,15 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I do computer stuff during the day, otherwise I tweet about backpacks and I email about movies.
+If you want in on my movies & tv email thread (it's very casual) just ask. If you want
+in on the backpack tweets you're gonna have to endure the rest of my tweets – they're 
+mostly about how easy it is to destroy your local copy of a git repo or how dumb
+tech culture tends to be. I live in Chicago but I spent 5 years in Charleston, SC.
