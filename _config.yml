@@ -23,7 +23,7 @@ twitter_username:   piazzamatt # set to 'false' to disable
 github_username:    piazzamp # set to 'false' to disable
 
 # Site Settings
-url:                https://mattpiazza.com # main url
+url:                https://piazzamp.github.io
 baseurl:            / # for gh-pages
 permalink:          /notes/:title # Post permalink
 timezone:           America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
