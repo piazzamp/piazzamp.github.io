@@ -1,4 +1,65 @@
-<p>all of the 50-point crypto challenges this year were based on Mr Robot episodes – the ciphertext files were named after episodes while all the flags were quotes from that episode. neat.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>2015 CSAW CTF: crypto writeups · memory leak</title>
+
+
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@piazzamatt" />
+	<meta name="twitter:title" content="2015 CSAW CTF: crypto writeups" />
+	<meta name="twitter:description" content="all of the 50-point crypto challenges this year were based on Mr Robot episodes – the ciphertext files were named after episodes while all the flags were quotes from that episode. neat.">
+
+
+<meta name="description" content="all of the 50-point crypto challenges this year were based on Mr Robot episodes – the ciphertext files were named after episodes while all the flags were quo...">
+
+
+
+<link rel="icon" href="http://localhost:4000//assets/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:4000//assets/touch-icon.png">
+<link rel="stylesheet" href="http://localhost:4000//assets/core.css">
+<link rel="canonical" href="http://localhost:4000//notes/2015-csaw-ctf-crypto-writeups">
+<link rel="alternate" type="application/atom+xml" title="memory leak" href="http://localhost:4000//feed.xml" />
+
+
+
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	
+		<a href="//">
+			<img src="https://www.gravatar.com/avatar/ec6e23ab6c4706a0a8823c3c331d5e8e.png?s=80" class="gravatar">
+		</a>
+		<span class="logo-prompt">Back to Home</span>
+	
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>2015 CSAW CTF: crypto writeups</h1>
+		<time>October 5, 2015</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>all of the 50-point crypto challenges this year were based on Mr Robot episodes – the ciphertext files were named after episodes while all the flags were quotes from that episode. neat.</p>
 
 <p>eps1.1_ones-and-zer0es_c4368e65e1883044f3917485ec928173.mpeg</p>
 
@@ -30,3 +91,30 @@ immeiately I try base64 -D eps1.9_zer0-day_b7604a922c8feef666a957933751a074.avi 
 
 <p>these hints came, word for word, from the irc channel. anyway they lead me to the solution – the substitution alphabet which can simply be recovered by entering in the normal alphabet into the encrytor: abcdefghijklmnopqrstuvwxyz if you’re not familiar. once you know how the characters are rearranged you have broken the cryptosystem and can go back-n-forth between plaintext and ciphertext as you please.
 ps – the youtube link in hint no. 2 goes to nic cage teaches the alphabet since you just had to enter the abc’s to solve the challenge.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="http://localhost:4000//notes/2015-csaw-ctf-two-forensics-100s-flash-keep" title="NEXT: 2015 CSAW CTF: two forensics 100s flash & keep calm">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="http://localhost:4000/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="http://localhost:4000//notes/2015-csaw-ctf-web-200-lawn-care-writeup" title="PREV: 2015 CSAW CTF: web 200 lawn care writeup">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&copy; 2018 matt piazza</span>
+  <span class="block"><small>&lt;/&gt; This site uses <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for a personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</small></span>
+</div>
+
+
+	</body>
+
+</html>

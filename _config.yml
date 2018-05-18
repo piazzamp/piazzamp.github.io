@@ -7,7 +7,9 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
 
+# remote_theme: heiswayi/the-plain
 remote_theme: heiswayi/the-plain
+
 
 # Google APIs
 # google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Your Google Verification - set to 'false' to disable

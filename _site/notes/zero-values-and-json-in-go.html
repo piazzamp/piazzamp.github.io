@@ -1,7 +1,95 @@
-<p>Go is great, I think that is apparent. If you have talked to me about software development at all in the past 5 months then you have certainly heard me talk about Go and how pleasing I find it to write.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>Zero Values and JSON in Go · memory leak</title>
+
+
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@piazzamatt" />
+	<meta name="twitter:title" content="Zero Values and JSON in Go" />
+	<meta name="twitter:description" content="Go is great, I think that is apparent. If you have talked to me about software development at all in the past 5 months then you have certainly heard me talk about Go and how pleasing I find it to w...">
+
+
+<meta name="description" content="Go is great, I think that is apparent. If you have talked to me about software development at all in the past 5 months then you have certainly heard me talk ...">
+
+
+
+<link rel="icon" href="http://localhost:4000//assets/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:4000//assets/touch-icon.png">
+<link rel="stylesheet" href="http://localhost:4000//assets/core.css">
+<link rel="canonical" href="http://localhost:4000//notes/zero-values-and-json-in-go">
+<link rel="alternate" type="application/atom+xml" title="memory leak" href="http://localhost:4000//feed.xml" />
+
+
+
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	
+		<a href="//">
+			<img src="https://www.gravatar.com/avatar/ec6e23ab6c4706a0a8823c3c331d5e8e.png?s=80" class="gravatar">
+		</a>
+		<span class="logo-prompt">Back to Home</span>
+	
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>Zero Values and JSON in Go</h1>
+		<time>February 20, 2016</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Go is great, I think that is apparent. If you have talked to me about software development at all in the past 5 months then you have certainly heard me talk about Go and how pleasing I find it to write.</p>
 
 <p>There are great, baked-in features, like documentation, testing, and (obviously) JSON encoding &amp; decoding of native types. It’s very simple to enable - any exported attribute (a field marked public, if you’re java-kin) of a struct can be encoded by the encoding/json package and will give you the obvious result where all struct elements have identical JSON field names. You have the option to override this default behavior and rename the fields or omit them entirely if they’re empty. So if your user has no middleName then the JSON version of that person will just not have a middleName field. Sound strightforward?</p>
 
 <p>How does encoding/json determine which fields to omit? I can’t say that I have read through their implementation, but it is safe to say that the package omits any field that has the zero-value for its type. That is a 0-length string, the int 0, float 0.0, or false. This works sometimes. If you want to pass back a false or a 0, your JSON representation will simply not have the fields you have set to those values.</p>
 
 <p>tl;dr: make sure there is no case where you want to send a zero-value via JSON in a field marked omitempty</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="http://localhost:4000//notes/interning" title="NEXT: Tech Internship Navigation for Students and Hiring Managers">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="http://localhost:4000/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="http://localhost:4000//notes/ringzer0team-challenge-113-writeup" title="PREV: ringzer0team challenge 113 writeup">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&copy; 2018 matt piazza</span>
+  <span class="block"><small>&lt;/&gt; This site uses <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for a personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</small></span>
+</div>
+
+
+	</body>
+
+</html>
