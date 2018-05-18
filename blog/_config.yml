@@ -1,0 +1,61 @@
+# Site Info
+title:              "memory leak"
+description:        "matt's blog"
+
+# theme info
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+remote_theme: heiswayi/the-plain
+
+# Google APIs
+# google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Your Google Verification - set to 'false' to disable
+google_analytics:   UA-68257890-1
+
+# Author Info
+author_name:        "matt piazza"
+author_email:       matt@piazza.ninja
+author_gravatar:    ec6e23ab6c4706a0a8823c3c331d5e8e # Gravatar md5 hash (of email) here for logo - set to 'false' to disable
+twitter_username:   piazzamatt # set to 'false' to disable
+github_username:    piazzamp # set to 'false' to disable
+
+# Site Settings
+url:                https://mattpiazza.com # main url
+baseurl:            / # for gh-pages
+permalink:          /notes/:title # Post permalink
+timezone:           America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            false  # enables support for mathjax - set to 'false' to disable
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+plugins:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
