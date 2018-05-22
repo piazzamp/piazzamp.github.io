@@ -23,9 +23,9 @@ twitter_username:   piazzamatt # set to 'false' to disable
 github_username:    piazzamp # set to 'false' to disable
 
 # Site Settings
-url:                https://piazzamp.github.io
+url:                https://mattpiazza.com
 baseurl:            / # for gh-pages
-permalink:          /notes/:title # Post permalink
+permalink:          /posts/:title # Post permalink
 timezone:           America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            false  # enables support for mathjax - set to 'false' to disable
 
