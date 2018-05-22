@@ -1,1 +1,1 @@
-Sitemap: https://mattpiazza.com/sitemap.xml
+Sitemap: https://piazzamp.github.io/sitemap.xml
