@@ -19,6 +19,7 @@ google_analytics:   UA-68257890-1
 author_name:        "matt piazza"
 author_email:       matt@piazza.ninja
 author_gravatar:    ec6e23ab6c4706a0a8823c3c331d5e8e # Gravatar md5 hash (of email) here for logo - set to 'false' to disable
+logo_url: https://1.gravatar.com/avatar/ec6e23ab6c4706a0a8823c3c331d5e8e?size=800
 twitter_username:   piazzamatt # set to 'false' to disable
 github_username:    piazzamp # set to 'false' to disable
 
